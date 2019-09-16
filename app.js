@@ -46,6 +46,7 @@ if([]){
 
 
 
+
 /* /////HW#2
 const color = 'red';
 
@@ -114,6 +115,10 @@ switch(true){
     default:
         console.log('She a boomer'); 
 } */
+
+
+
+
 
 
 
