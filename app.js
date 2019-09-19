@@ -1,4 +1,4 @@
-/* /////HW#1
+/* /////HW#1 - Type conversion in JS
 let x = 2 + '2'; 
 console.log(x); //shows 22 converts the string to a number
 
@@ -47,7 +47,7 @@ if([]){
 
 
 
-/* /////HW#2
+/* /////HW#2- Switch statements
 const color = 'red';
 
 switch(color){
@@ -122,7 +122,7 @@ switch(true){
 
 
 
-/* /////HW#3
+/* /////HW#3 - Functions
 //Function declarations
 
 function greet(firstName = 'John', lastName ='Doe'){
@@ -172,7 +172,7 @@ todo.delete(); */
 
 
 
-/////HW#4
+/* /////Array Practice
 const inventors = [
     { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
     { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
@@ -202,4 +202,34 @@ console.table(oldInventors);
 const names = inventors.map(function({first, last}){
     return {first, last};
 })
-console.table(names);
+console.table(names); */
+
+
+
+
+/* /////HW#4 - Block Scope with let const
+//Global Scope
+var a = 1;
+let b = 2;
+const c = 3;
+
+function test(){
+    var a = 4;
+    let b = 5;
+    const c = 6;
+    console.log('Function Scope: ', a, b, c);
+}
+test(); */
+
+/*if(true){ /// Block scope inside curly brackets
+    var a = 4; //changes the global scope
+    let b = 5;
+    const c = 6;
+    console.log('If Scope: ', a, b, c);
+}
+
+for(let a = 0; a < 10; a++){
+    console.log(`Loop: ${a}`);
+}
+console.log('Global Scope: ', a, b, c); */
+//let and const have a block level scope, var has a function scope
