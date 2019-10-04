@@ -233,3 +233,50 @@ for(let a = 0; a < 10; a++){
 }
 console.log('Global Scope: ', a, b, c); */
 //let and const have a block level scope, var has a function scope
+
+
+
+
+/////HW #6 MATH METHODS
+/* const num1 = 100;
+const num2 = 50;
+let val;
+
+//Simple math with numbers
+val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2; 
+val = num1 / num2;
+val = num1 % num2;
+
+//Math object
+val = Math.PI;
+val = Math.E;
+val = Math.round(2.4);
+val = Math.ceil(2.4);
+val = Math.floor(2.8);
+val = Math.sqrt(64);
+val = Math.abs(-3);
+val = Math.pow(8, 2);
+val = Math.min(2, 33, 4,1,55 ,6,3,-2);
+val = Math.max(2, 33, 4,1,55 ,6,3,-2);
+val = Math.random();
+val = Math.floor(Math.random() * 20 + 1);
+
+console.log(val); */
+
+
+
+/////HW #7 SPREAD OPERATOR and SPREAD
+/*... lets you take everything in an array without having to copy everything over, your can also push something into it*/
+/* const features = ['something here', 'blah'];
+const specialty = ['more stuff', 'blah'];
+const stuff = [...features, 'something', ...specialty]; */
+
+/* const heading = document.querySelector('.jump');
+heading.innerHTML = sparanWrap(heading.textContent);
+
+
+function sparanWrap(word){
+    return [...word].map(letter => `<span>${letter}</span>`).join('');
+} */ // this goes into the html
