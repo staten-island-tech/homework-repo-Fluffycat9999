@@ -280,3 +280,78 @@ heading.innerHTML = sparanWrap(heading.textContent);
 function sparanWrap(word){
     return [...word].map(letter => `<span>${letter}</span>`).join('');
 } */ // this goes into the html
+
+
+
+
+
+
+
+/////HW #8 ARRAY/OBJECT DESTRUCTURING
+/* const alphabet = ['A', 'B', 'C','D','E', 'F'];
+const numbers = ['1', '2','3','4','5','6'];
+
+/* const a = alphabet[0];
+const b = alphabet[1]; */
+/*const [a,,c, ... rest] = alphabet;
+
+const newArray = [...alphabet,...numbers];
+
+console.log(a);
+//console.log(b);
+console.log(c);
+console.log(rest);
+console.log(newArray); */
+
+/* function sumAndMultiply(a,b){
+    return [a+b, a*b, a/b];
+}
+
+const [sum, multiply, division = 'No division'] = sumAndMultiply(2,3);
+//console.log(array);
+console.log(sum);
+console.log(multiply);
+console.log(division); */
+
+const personOne = {
+    name: 'Kyle',
+    age: 24,
+    address: {
+        city: 'Someshere',
+        state:'One at them'
+    }
+}
+
+const personTwo= {
+    //name: 'Sally',
+    age: 32,
+    favoriteFood: 'Watermelon',
+    /* address:{
+        city: "Somewhere else",
+        state: "Another one of them"
+    } */
+}
+
+/* const {name:firstName, age, favoriteFood = 'rice'} = personTwo
+
+console.log(firstName);
+console.log(age);
+console.log(favoriteFood); */
+
+/* const {name:firstName,... rest} = personTwo
+
+console.log(firstName);
+console.log(rest); */
+
+/* const {name:firstName,address: {city}} = personTwo
+
+console.log(firstName);
+console.log(city); */
+
+/* const personThree = {...personOne, ...personTwo};
+console.log(personThree); */
+
+function printUser({name, age, favoriteFood = 'Watermelon'}){
+    console.log(`Name is: ${name}. Age is ${age}. Food is ${favoriteFood}`);
+}
+printUser(personOne);
