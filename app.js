@@ -313,24 +313,24 @@ console.log(sum);
 console.log(multiply);
 console.log(division); */
 
-const personOne = {
+/* const personOne = {
     name: 'Kyle',
     age: 24,
     address: {
         city: 'Someshere',
         state:'One at them'
     }
-}
+}*/
 
-const personTwo= {
+/*const personTwo= {
     //name: 'Sally',
     age: 32,
     favoriteFood: 'Watermelon',
     /* address:{
         city: "Somewhere else",
         state: "Another one of them"
-    } */
-}
+    } 
+}*/
 
 /* const {name:firstName, age, favoriteFood = 'rice'} = personTwo
 
@@ -351,7 +351,32 @@ console.log(city); */
 /* const personThree = {...personOne, ...personTwo};
 console.log(personThree); */
 
-function printUser({name, age, favoriteFood = 'Watermelon'}){
+/*function printUser({name, age, favoriteFood = 'Watermelon'}){
     console.log(`Name is: ${name}. Age is ${age}. Food is ${favoriteFood}`);
 }
-printUser(personOne);
+printUser(personOne); */
+
+
+/////HW #9 PROMISES
+/* async function go(){
+    const p1 = fetch('https://api.github.com/users/wesbos')
+    .then(r => r.json());
+/*    const p2 = fetch('https://api.github.com/users/stolinski')
+    .then(r => r.json());
+//wait for both of them to come back
+    const res = await Promise.all([p1,p2]);
+    //console.log(res);
+    const dataPromises = res.map(r => r.json());
+    const [wes, scott] = await Promise.all(dataPromises);
+    console.log(wes, scott);
+}
+
+go(); */
+
+/* async function getData(names){
+    const promises = names.map(name => fetch(`https://api.github.com/users/${name}`).then(r => r.json()));
+    const [wes, scott] = await Promise.all(promises);
+    //console.log(wes, scott);
+}
+
+getData(['wesbos', 'stolinski', 'darcyclarke']); */
